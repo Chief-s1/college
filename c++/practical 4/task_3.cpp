@@ -16,9 +16,10 @@ return (a+b);
 }
 
 }
-
+using namespace one;
+using namespace two;
 int main(void)
 {
-cout<<one::add(1,2)<<endl;
-cout<<two::add(6.1,2.2)<<endl;
+cout<<add(1,2)<<endl;
+cout<<add(6.1f,2.2f)<<endl;
 }
