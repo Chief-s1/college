@@ -1,0 +1,2 @@
+we are getting error because we have not used "using namespace std;" in the  code as functions like cout,cin are declared inside std namespace in iostream file therefore even if
+we include iostream file in our code we will get error because code for cout and its functionalities is defined inside std namespace
