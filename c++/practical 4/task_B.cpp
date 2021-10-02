@@ -21,5 +21,6 @@ cout<<add(1,2)<<endl;
 cout<<add(1.1,1.3)<<endl;
 cout<<add(1,5.1)<<endl;
 cout<<add(5.1,3)<<endl;
+cout<<add(0,0)<<endl;
 return 0;
 }
