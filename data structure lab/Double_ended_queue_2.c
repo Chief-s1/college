@@ -17,7 +17,7 @@ else
 
 void dequeue(int ar[],int *f,int *r)
 {
-if(*f==-1||*r==-1)
+if(*f==-1||*r==-1||*f>*r)
    printf("queue is empty\n");
 else
  {
@@ -28,16 +28,20 @@ else
 
 void dequeuerear(int ar[],int *f,int *r)
 {
-if(*r==-1)
-   printf("queue is empty ");
+if(*r==-1||*f>*r)
+   printf("queue is empty\n");
 else
  {
-   printf("deleted element is :%d",ar[*r]);
+   printf("deleted element is :%d\n",ar[*r]);
    *r-=1;
  }
 }
 void display(int ar[],int f,int r)
 {
+if(f>r)
+{
+ printf("queue is empty\n");
+}
 for(int i=f;i<=r;i++)
 {
 printf("%d\n",ar[i]);
@@ -80,7 +84,7 @@ switch(ch1)
                         break;
 		 case 5:
                         break;
-                 default :printf("Invalid option!!!");
+                 default :printf("Invalid option!!!\n");
                         break;
                }
                }while(ch2!=5);
@@ -117,8 +121,4 @@ switch(ch1)
        }
       }while(ch1!=3);
  return 0;
-}            
- 
-               
-             
-	
+}      
